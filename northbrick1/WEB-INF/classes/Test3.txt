@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+
+<html>
+
+
+<pre>
+		
+		Utils.header("Products");
+    // Leer el argumento de entrada
+	
+ 
+	 
+	 Vector<ProductDataMockup> productList = ProductDataMockup.getProductList();
+     ProductDataMockup product = productList.elementAt(0);
+	 
+		<pre>
+		"Product id: " + product.productId ; 
+		</pre>
+		<pre>
+		System.out.println("Product name: " + product.productName ); 
+		</pre>
+		<pre>
+		System.out.println("Company name: " + product.companyName );
+		</pre>
+ 		
+		<pre>
+		System.out.println("Product unit price: " + product.unitPrice ); 
+		</pre>
+		
+	
+		
+		Utils.footer("Products");
+</pre>
+</html>

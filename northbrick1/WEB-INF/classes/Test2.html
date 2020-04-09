@@ -1,0 +1,42 @@
+import java.io.*;
+import java.util.*;
+
+
+public class Test {
+
+
+
+    public static void main(String[] args) {
+        // generate some simple output
+
+		
+		Utils.header("Products");
+    // Leer el argumento de entrada
+	
+     String indice=args[0];
+     System.out.println("Indice: "+ indice);
+	 int index= Integer.parseInt(indice);
+	 
+	 Vector<ProductDataMockup> productList = ProductDataMockup.getProductList();
+     ProductDataMockup product = productList.elementAt(index);
+	 
+		<pre>
+		System.out.println("Product id: " + product.productId ); 
+		</pre>
+		<pre>
+		System.out.println("Product name: " + product.productName ); 
+		</pre>
+		<pre>
+		System.out.println("Company name: " + product.companyName );
+		</pre>
+ 		
+		<pre>
+		System.out.println("Product unit price: " + product.unitPrice ); 
+		</pre>
+		
+	
+		
+		Utils.footer("Products");
+    }
+}
+     
