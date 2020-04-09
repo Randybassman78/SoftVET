@@ -11,6 +11,8 @@ public class ProductListMockup extends HttpServlet {
         PrintWriter toClient = res.getWriter();
         toClient.println(Utils.header("Products"));
 toClient.println("Iloveyou");
+toClient.println("Hello world!");
+
         toClient.println("<table border='1'>");
         Vector<ProductDataMockup> productList = ProductDataMockup.getProductList();
         for(int i=0; i< productList.size(); i++){
